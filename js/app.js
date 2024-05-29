@@ -407,9 +407,9 @@ function getCurrentTheme(){
 function loadTheme(theme){
   const root = document.querySelector(':root');
   if(theme === "light"){
-    themeBtn.innerHTML = `<em></em><i class="ph-bold ph-moon-stars"></i>`;
+    themeBtn.innerHTML = `<i class="fa-solid fa-lightbulb"></i>`;
   } else {
-    themeBtn.innerHTML = `<em></em><i class="ph-bold ph-sun"></i>`;
+    themeBtn.innerHTML = `<i class="fa-solid fa-sun"></i>`;
   }
   root.setAttribute('color-scheme', `${theme}`);
 };
